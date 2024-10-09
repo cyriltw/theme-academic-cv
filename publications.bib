@@ -1,0 +1,228 @@
+@misc{dutta2024articleannotatorreliabilityincontext,
+      title={ARTICLE: Annotator Reliability Through In-Context Learning}, 
+      author={Sujan Dutta and Deepak Pandita and Tharindu Cyril Weerasooriya and Marcos Zampieri and Christopher M. Homan and Ashiqur R. KhudaBukhsh},
+      year={2024},
+      eprint={2409.12218},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2409.12218}, 
+}
+@misc{pandita2024ratercohesionqualityvicarious,
+      title={Rater Cohesion and Quality from a Vicarious Perspective}, 
+      author={Deepak Pandita and Tharindu Cyril Weerasooriya and Sujan Dutta and Sarah K. Luger and Tharindu Ranasinghe and Ashiqur R. KhudaBukhsh and Marcos Zampieri and Christopher M. Homan},
+      year={2024},
+      eprint={2408.08411},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2408.08411}, 
+}
+@inproceedings{weerasooriya-etal-2023-subjective,
+    title = "Subjective Crowd Disagreements for Subjective Data: Uncovering Meaningful {C}rowd{O}pinion with Population-level Learning",
+    author = "Weerasooriya, Tharindu Cyril  and
+      Luger, Sarah  and
+      Poddar, Saloni  and
+      KhudaBukhsh, Ashiqur  and
+      Homan, Christopher M.",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.54",
+    pages = "950--966",
+    abstract = "Human-annotated data plays a critical role in the fairness of AI systems, including those that deal with life-altering decisions or moderating human-created web/social media content. Conventionally, annotator disagreements are resolved before any learning takes place. However, researchers are increasingly identifying annotator disagreement as pervasive and meaningful. They also question the performance of a system when annotators disagree. Particularly when minority views are disregarded, especially among groups that may already be underrepresented in the annotator population. In this paper, we introduce CrowdOpinion, an unsupervised learning based approach that uses language features and label distributions to pool similar items into larger samples of label distributions. We experiment with four generative and one density-based clustering method, applied to five linear combinations of label distributions and features. We use five publicly available benchmark datasets (with varying levels of annotator disagreements) from social media (Twitter, Gab, and Reddit). We also experiment in the wild using a dataset from Facebook, where annotations come from the platform itself by users reacting to posts. We evaluate CrowdOpinion as a label distribution prediction task using KL-divergence and a single-label problem using accuracy measures.",
+}
+
+@inproceedings{weerasooriya-etal-2023-disagreement,
+    title = "Disagreement Matters: Preserving Label Diversity by Jointly Modeling Item and Annotator Label Distributions with {D}is{C}o",
+    author = "Weerasooriya, Tharindu Cyril  and
+      Alexander G. Ororbia II  and
+      Bhensadadia, Raj  and
+      KhudaBukhsh, Ashiqur  and
+      Homan, Christopher M.",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.287",
+    pages = "4679--4695",
+    abstract = "Annotator disagreement is common whenever human judgment is needed for supervised learning. It is conventional to assume that one label per item represents ground truth. However, this obscures minority opinions, if present. We regard {``}ground truth{''} as the distribution of all labels that a population of annotators could produce, if asked (and of which we only have a small sample). We next introduce DisCo (Distribution from Context), a simple neural model that learns to predict this distribution. The model takes annotator-item pairs, rather than items alone, as input, and performs inference by aggregating over all annotators. Despite its simplicity, our experiments show that, on six benchmark datasets, our model is competitive with, and frequently outperforms, other, more complex models that either do not model specific annotators or were not designed for label distribution learning.",
+}
+
+@inproceedings{agostinho-da-silva-etal-2023-findings,
+    title = "Findings from the {B}ambara - {F}rench Machine Translation Competition ({BFMT} 2023)",
+    author = "Agostinho Da Silva, Ninoh  and
+      Ajayi, Tunde Oluwaseyi  and
+      Antonov, Alexander  and
+      Azazia Kamate, Panga  and
+      Coulibaly, Moussa  and
+      Del Rio, Mason  and
+      Diarra, Yacouba  and
+      Diarra, Sebastian  and
+      Emezue, Chris  and
+      Hamilcaro, Joel  and
+      Homan, Christopher M.  and
+      Most, Alexander  and
+      Mwatukange, Joseph  and
+      Ohue, Peter  and
+      Pham, Michael  and
+      Sako, Abdoulaye  and
+      Samb, Sokhar  and
+      Sy, Yaya  and
+      Weerasooriya, Tharindu Cyril  and
+      Zahidi, Yacine  and
+      Luger, Sarah",
+    booktitle = "Proceedings of the The Sixth Workshop on Technologies for Machine Translation of Low-Resource Languages (LoResMT 2023)",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.loresmt-1.9",
+    pages = "110--122",
+    abstract = "Orange Silicon Valley hosted a low-resource machine translation (MT) competition with monetary prizes. The goals of the competition were to raise awareness of the challenges in the low-resource MT domain, improve MT algorithms and data strategies, and support MT expertise development in the regions where people speak Bambara and other low-resource languages. The participants built Bambara to French and French to Bambara machine translation systems using data provided by the organizers and additional data resources shared amongst the competitors. This paper details each team{'}s different approaches and motivation for ongoing work in Bambara and the broader low-resource machine translation domain.",
+}
+
+@article{Weerasooriya2021,
+  author    = {Tharindu Cyril Weerasooriya and
+               Alexander G. Ororbia II and
+               Christopher M. Homan},
+  title     = {Improving Label Quality by Jointly Modeling Items and Annotators},
+  abstract  = {We propose a fully Bayesian framework for learning ground truth labels from noisy annotators. Our framework ensures scalability by factoring a generative, Bayesian soft clustering model over label distributions into the classic David and Skene joint annotator-data model. Earlier research along these lines has neither fully incorporated label distributions nor explored clustering by annotators only or data only. Our framework incorporates all of these properties as: (1) a graphical model designed to provide better ground truth estimates of annotator responses as input to any black box supervised learning algorithm, and (2) a standalone neural model whose internal structure captures many of the properties of the graphical model. We conduct supervised learning experiments using both models and compare them to the performance of one baseline and a state-of-the-art model.},
+  journal   = {CoRR},
+  volume    = {abs/2106.10600},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2106.10600},
+  eprinttype = {arXiv},
+  eprint    = {2106.10600},
+  timestamp = {Tue, 29 Jun 2021 16:55:04 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2106-10600.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{Mendis2019,
+abstract = {Sri Lankans made over 100 million visits to public and private outpatient departments (OPD) during 2015, which is estimated to double in 2027. However, these visits have no records, either paper or electronic. Medical records are essential to provide continuity of care, and computer-based medical records were identified as essential technology in 1990 by the Institute of Medicine. The main initiative of the Ministry of Health addresses either OPD health information system or inward system, but it is limited to a few selected hospitals. There are no electronic health records (EHR) that can track patients as they crisscross between different primary care providers in public and private sectors, which is the normal behaviour of the majority of our patients. This paper gives a snapshot of the current healthcare system in Sri Lanka, notes the existing projects related to primary care health information systems, briefly reviews the current status of the global primary care EHR and describes our solution of a generic, cloud-based, open source EHR for use across public and private sectors focusing on a patient-centred electronic 'personal health record'. We opted to modify a time-tested software solution OpenEMR-https://www.open-emr.org/OpenEMR is a free and open source, ONC certified, electronic health records and medical practice management application featuring fully integrated electronic health records, practice management, scheduling, electronic billing, internationalization, and multi-lingual support. Sri Lanka OpenEMR (SLOEMR) is now used at the University Family Medicine Centre, Faculty of Medicine, University of Kelaniya at Ragama. Paper medical records of more than a decade were converted to the electronic format. We are in the planning process of piloting the SLOEMR in the Ragama Medical Officer of Health Area with a population of 70,000, with a single electronic record for each person across all private and public sector healthcare providers.},
+author = {Mendis, Kumara and Weerasooriya, Tharindu Cyril and Withana, Supun and Liyanage, Prabath and Silva, Aruni Weerakoon and Wickramasinghe, Rajitha and Weerabaddana, Chaminda},
+doi = {10.1109/NITC48475.2019.9114518},
+isbn = {9781728155692},
+journal = {2019 National Information Technology Conference, NITC 2019},
+keywords = {Sri Lanka,biomedical informatics,cloud-based patient records,electronic health records,electronic medical records,medical records,open source,personal health records,primary health care},
+pages = {8--10},
+title = {{Cloud-Based Open Source Primary Care Electronic Patient Record System for Sri Lankan Citizens}},
+url = {https://ieeexplore.ieee.org/document/9114518},
+year = {2019}
+}
+@article{Weerasooriya2020,
+abstract = {Supervised machine learning often requires human-annotated data. While annotator disagreement is typically interpreted as evidence of noise, population-level label distribution learning (PLDL) treats the collection of annotations for each data item as a sample of the opinions of a population of human annotators, among whom disagreement may be proper and expected, even with no noise present. From this perspective, a typical training set may contain a large number of very small-sized samples, one for each data item, none of which, by itself, is large enough to be considered representative of the underlying population's beliefs about that item. We propose an algorithmic framework and new statistical tests for PLDL that account for sampling size. We apply them to previously proposed methods for sharing labels across similar data items. We also propose new approaches for label sharing, which we call neighborhood-based pooling.},
+archivePrefix = {arXiv},
+arxivId = {2003.07406},
+author = {Weerasooriya, Tharindu Cyril and Liu, Tong and Homan, Christopher M.},
+doi = {10.3233/FAIA200130},
+eprint = {2003.07406},
+isbn = {9781643681009},
+issn = {09226389},
+journal = {Frontiers in Artificial Intelligence and Applications},
+number = {Figure 1},
+pages = {490--497},
+title = {{Neighborhood-based pooling for population-level label distribution learning}},
+url = {https://arxiv.org/abs/2003.07406},
+volume = {325},
+year = {2020}
+}
+@inproceedings{Weerasooriya2017b,
+abstract = {The corpus is a limiting factor for a keyword extraction process with a word matching stage. This paper proposes a framework to automate the corpus generation stage required for the Twitter Model of KeyXtract, an algorithm used for essential keyword extraction from tweets. The initial algorithm was designed with two manually compiled corpora that limited the adaptability of the system. The automated framework proposed in the present research is an extension to the keyword extraction process of KeyXtract and would address this limitation of the system. The design was carried out using open-class words of the source text and by matching them against the bag of words compiled by analyzing the tweets. The automated corpus had a total of 138 words, out of which 74 words were also found in the handpicked corpus (which had a total of 206 words). However, when the corpus was used with the keyword extraction system, the average F1 scores of the system showed a decrease of 0.07, proving that the automated corpus cannot perform parallel to the human-made corpus in complexity. This was because the human-made corpus was compiled using syntactic, semantic and pragmatic features while the automated framework focused only on the syntactic features. However, there were individual tweets in which the F1 score showed an increase. Thus, this was a promising first step in the corpus automation process. The automatic corpus generation framework could be made more accurate by including the semantic analysis of the lexical items. Thus, the present framework is able to substantially address the limitation of the corpus compilation which was present in the Twitter Model of KeyXtract.},
+author = {Weerasooriya, Tharindu and Perera, Nandula and Liyanage, S. R.},
+booktitle = {17th International Conference on Advances in ICT for Emerging Regions, ICTer 2017 - Proceedings},
+doi = {10.1109/ICTER.2017.8257783},
+isbn = {9781538624432},
+keywords = {Adaptive,Automated Corpus,KeyXtract,Natural Language Processing,Tweets},
+pages = {43--48},
+title = {{A framework for automated corpus compilation for KeyXtract: Twitter model}},
+url = {https://ieeexplore.ieee.org/document/8257783},
+volume = {2018-Janua},
+year = {2017}
+}
+@article{Weerasooriya2015,
+abstract = {Trains are a popular mode of public transport used by daily commuters in Sri Lanka. However, the process of ticketing in the trains causes a number of inconveniences. At present, some countries use a debit card designed exclusively for train travel as a means of reducing the hassle. However, the paper based ticket is still commonly used for train travel in many countries, including Sri Lanka. The aims of this research are to develop an automated ticketing system that would replace the existing train ticketing system while providing an online seat reservation system. Due to the increase in efficiency of the proposed system, it would be beneficial to the commuters as well as the staff of the Department of Railways. From the beginning of 2016, the Electronic National Identity Card (henceforth referred to as e-NIC) was proposed to be used in Sri Lanka. The research presents an alternative system of ticketing where the e-NIC is mainly used to replace the traditional train ticket, thereby increasing the efficiency of the purchase and the use of train tickets. The e-NIC is combined with the bank account of the commuter. The system supports four types of passes, the e-NIC, prepaid pass, booked ticket and kids pass. Once the commuter enters a station, the pass is initially validated by the platform scanner (PS), upon entering a certain train, the train number and station he/she enters is recorded by the train scanner (TS). Once he/she gets down from the destination, the TS and the PS validate the train details and trip cost is deducted from the account. This new method has many advantages over the traditional train ticketing system. These include reducing the time spent on ticket purchase, eliminating the need to use cash in the process and strengthening the security of the issue and purchase of the train tickets. This would also help in the prevention of ticket fraud. The program was white box tested. This is proposed to be used in Sri Lanka, however the method can be expanded to other countries. The concept system was developed using Java and backed up by MySQL databases.},
+author = {Weerasooriya, Tharindu},
+journal = {ICT for Development Working Paper Series},
+keywords = {automated railway ticketing system,electronic national identity card,java,mysql},
+number = {1-2},
+pages = {67--77},
+title = {{Automated Railway Ticketing System: Replacing the paper based ticket with the Electronic National Identity}},
+volume = {6},
+year = {2016}
+}
+@inproceedings{Weerasooriya2017,
+abstract = {Since a tweet is limited to 140 characters, it is ambiguous and difficult for traditional Natural Language Processing (NLP) tools to analyse. This research presents KeyXtract which enhances the machine learning based Stanford CoreNLP Part-of-Speech (POS) tagger with the Twitter model to extract essential keywords from a tweet. The system was developed using rule-based parsers and two corpora. The data for the research was obtained from a Twitter profile of a telecommunication company. The system development consisted of two stages. At the initial stage, a domain specific corpus was compiled after analysing the tweets. The POS tagger extracted the Noun Phrases and Verb Phrases while the parsers removed noise and extracted any other keywords missed by the POS tagger. The system was evaluated using the Turing Test. After it was tested and compared against Stanford CoreNLP, the second stage of the system was developed addressing the shortcomings of the first stage. It was enhanced using Named Entity Recognition and Lemmatization. The second stage was also tested using the Turing test and its pass rate increased from 50.00{\%} to 83.33{\%}. The performance of the final system output was measured using the F1 score. Stanford CoreNLP with the Twitter model had an average F1 of 0.69 while the improved system had a F1 of 0.77. The accuracy of the system could be improved by using a complete domain specific corpus. Since the system used linguistic features of a sentence, it could be applied to other NLP tools.},
+address = {Ratmalana},
+archivePrefix = {arXiv},
+arxivId = {1708.02912},
+author = {Weerasooriya, Tharindu and Perera, Nandula and Liyanage, S. R.},
+booktitle = {10th KDU International Research Conference},
+eprint = {1708.02912},
+keywords = {0,2014,6,al,and pos tagging,b,current tools in nlp,currently,extraction,manning et,open nlp,stanford corenlp,version 1,version 3,welcome to apache},
+title = {{KeyXtract Twitter Model - An Essential Keywords Extraction Model for Twitter Designed using NLP Tools}},
+url = {http://arxiv.org/abs/1708.02912},
+year = {2017}
+}
+@article{Perera2016,
+abstract = {Sri Lankan English (SLE) has unique phonological, morphological, lexical and syntactic features which have gradually developed since the introduction of English to Sri Lanka. Vocabulary is one of the first features to develop in SLE. Although the SLE vocabulary has been studied and recorded, its generational difference has not been examined. The objective of the study was to investigate if the ‘generational change' observable in the SLE vocabulary could be considered an evolution. This was done through a qualitative, comparative analysis of the vocabulary used in the decades 1955 – 1965 and 2005 – 2015. The theoretical base of the research was defined using two theories of language evolution: the apparent-time hypothesis and age-gradedness. The primary data was taken from the Ceylon Observer of the decade 1955 – 1965 and the Sunday Observer of the decade 2005 - 2015. The words were used in a questionnaire survey of 60 participants of which 30 were of the age 15 – 25 years and 30 were of the age 65- 75 years. The results of the survey were then analyzed in detail through 10 interviews. The surveys and the interviews were conducted to prove/disprove the age-gradedness of the SLE vocabulary and to prove/disprove the apparent-time hypothesis in relation to the SLE vocabulary. Most of the vocabulary used disproved age-gradedness. The usages of these terms were found to be generation specific, which supported that the SLE vocabulary is not age-graded. The interviews supported the apparent-time hypotheses as the older generation showed that their vocabulary has not changed significantly over the years. From these observations, it could be concluded that within the scope of the research, the generational difference observable in the SLE vocabulary over 60 years could be termed an evolution.},
+author = {Perera, Nandula and Weerasooriya, Tharindu},
+journal = {VISTAS Journal},
+pages = {1--23},
+title = {{The ‘Racecourse' of Then and Now: Evolution of the Sri Lankan English Vocabulary Over Two Generations of SLE Speakers}},
+url = {http://digital.lib.ou.ac.lk/docs/handle/701300122/1453},
+volume = {10},
+year = {2016}
+}
+@inproceedings{Weerasooriya2017a,
+abstract = {A tweet is an authentic use of Natural Language where the user has to deliver the message in 140 characters or less. According to previous researchers, this restriction increases the possible ambiguity of a tweet making it difficult for traditional Natural Language Processing (NLP) tools to analyze it. This research enhances the machine learning based Stanford CoreNLP Part-of-Speech (POS) tagger with the Twitter model to extract essential keywords from a tweet. The system was enhanced using two rule-based parsers and a corpus. The research was conducted using tweets of customer service requests sent to a telecommunication company. A domain specific corpus was compiled after analyzing the tweets. The POS tagger extracted the keywords while the parsers removed any possible noise and extracted any other keywords missed by the POS tagger. The evaluation of the system was done using the Turing Test. The proposed system was tested and compared against the Stanford CoreNLP. The testing was conducted using 6 test cases, each consisting of a human keyword generator and a supervisor. In order to ensure the impartiality and intellectual diversity, the response generators and supervisors were representatives of 6 different fields. As a result of the enhancements, the Turing Test score of the system increased from 50.00{\%} to 83.33{\%}. The accuracy of the system could be further improved by using a complete domain specific corpus. Since the approach used theoretical linguistic features of a sentence, the same method could be employed for other NLP tools.},
+author = {Weerasooriya, Tharindu and Perera, Nandula and Liyanage, S. R.},
+booktitle = {16th International Conference on Advances in ICT for Emerging Regions, ICTer 2016 - Conference Proceedings},
+doi = {10.1109/ICTER.2016.7829895},
+isbn = {9781509060788},
+keywords = {Natural Language Processing,Turing Test,Tweet Analysis},
+pages = {29--34},
+title = {{A method to extract essential keywords from a tweet using NLP tools}},
+url = {https://ieeexplore.ieee.org/document/7829895},
+year = {2017}
+}
+@inproceedings{weerasooriyaImprovingLabelQuality2022,
+    title = {Improving {Label} {Quality} by {Joint} {Probabilistic} {Modeling} of {Items} and {Annotators}},
+    url = {http://lrec-conf.org/proceedings/lrec2022/workshops/NLPerspectives/pdf/2022.nlperspectives-1.12.pdf},
+    abstract = {We propose a fully Bayesian framework for learning ground truth labels from noisy annotators. Our framework ensures scalability by factoring a generative, Bayesian soft clustering model over label distributions into the classic David and Skene joint annotator-data model. Earlier research along these lines has neither fully incorporated label distributions nor explored clustering by annotators only or data only. Our framework incorporates all of these properties within a graphical model designed to provide better ground truth estimates of annotator responses as input to any black box supervised learning algorithm. We conduct supervised learning experiments with variations of our models and compare them to the performance of several baseline models.},
+    language = {en},
+    booktitle = {Proceedings of the 1st {Workshop} on {Perspectivist} {Approaches} to {NLP} @{LREC2022}},
+    publisher = {European Language Resources Association},
+    author = {Weerasooriya, Tharindu Cyril and Ororbia, Alexander G and Homan, Christopher M},
+    year = {2022},
+    pages = {5},
+}
+
+
+@inproceedings{homanAnnotatorResponseDistributions2022,
+    title = {Annotator {Response} {Distributions} as a {Sampling} {Frame}},
+    url = {http://lrec-conf.org/proceedings/lrec2022/workshops/NLPerspectives/pdf/2022.nlperspectives-1.8.pdf},
+    abstract = {Annotator disagreement is often dismissed as noise or the result of poor annotation process quality. Others have argued that it can be meaningful. But lacking a rigorous statistical foundation, the analysis of disagreement patterns can resemble a high-tech form of tea-leaf-reading. We contribute a framework for analyzing the variation of per-item annotator response distributions to data for humans-in-the-loop machine learning. We provide visualizations for, and use the framework to analyze the variance in, a crowdsourced dataset of hard-to-classify examples of the OpenImages archive.},
+    language = {en},
+    booktitle = {Proceedings of the 1st {Workshop} on {Perspectivist} {Approaches} to {NLP} @{LREC2022}},
+    publisher = {European Language Resources Association},
+    author = {Homan, Christopher and Weerasooriya, Tharindu Cyril and Aroyo, Lora and Welty, Chris},
+    year = {2022},
+    pages = {10},
+}
+
+
+@misc{weerasooriya_vicarious_2023,
+  title = {Vicarious {Offense} and {Noise} {Audit} of {Offensive} {Speech} {Classifiers}},
+  copyright = {All rights reserved},
+  url = {http://arxiv.org/abs/2301.12534},
+  abstract = {This paper examines social web content moderation from two key perspectives: automated methods (machine moderators) and human evaluators (human moderators). We conduct a noise audit at an unprecedented scale using nine machine moderators trained on well-known offensive speech data sets evaluated on a corpus sampled from 92 million YouTube comments discussing a multitude of issues relevant to US politics. We introduce a first-of-its-kind data set of vicarious offense. We ask annotators: (1) if they find a given social media post offensive; and (2) how offensive annotators sharing different political beliefs would find the same content. Our experiments with machine moderators reveal that moderation outcomes wildly vary across different machine moderators. Our experiments with human moderators suggest that (1) political leanings considerably affect first-person offense perspective; (2) Republicans are the worst predictors of vicarious offense; (3) predicting vicarious offense for the Republicans is most challenging than predicting vicarious offense for the Independents and the Democrats; and (4) disagreement across political identity groups considerably increases when sensitive issues such as reproductive rights or gun control/rights are discussed. Both experiments suggest that offense, is indeed, highly subjective and raise important questions concerning content moderation practices.},
+  urldate = {2023-02-25},
+  publisher = {arXiv},
+  author = {Weerasooriya, Tharindu Cyril and Dutta, Sujan and Ranasinghe, Tharindu and Zampieri, Marcos and Homan, Christopher M. and KhudaBukhsh, Ashiqur R.},
+  month = feb,
+  year = {2023},
+  note = {arXiv:2301.12534 [cs]},
+  keywords = {Computer Science - Computation and Language, Computer Science - Computers and Society, Computer Science - Machine Learning},
+}
