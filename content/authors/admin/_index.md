@@ -126,9 +126,9 @@ skills:
 languages:
   - name: English
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
+  - name: Sinhala
+    percent: 100
+  - name: German
     percent: 25
 
 # Awards.
