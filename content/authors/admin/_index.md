@@ -165,4 +165,12 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hello there. I study how we can predict human disagreements during human annotation using machine learning. This work is helpful when we want to model human disagreements, which is conventionally considered *annotation noise*. Following recent breakthroughs in machine learning research has shown instances where the algorithms being biased towards specific groups. I'm PhD student at the [Lab for Population Intelligence](https://www.rit.edu/lpi/) at RIT led by Professor [Christopher Homan](https://www.rit.edu/lpi/christopher-homan).
+
+Currently in the job market. I've interned at Amazon Ads as an Applied Scientist Intern (2023), Meta (Facebook) in Summer 2022 and RPI (IBM Watson Project) in Summer 2019. 
+
+In parallel, I'm also working with University of Kelaniya in Sri Lanka to build an electronic medical record system for the entity of Sri Lanka. My previous research also comes from sociolinguistics, studying the evolution of *Sri Lankan English* across multiple generations. 
+
+I enjoy DevOPS side of systems and building systems that are end to end. 
+
+When I'm not at my desk, I envy traveling. 
